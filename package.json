@@ -1,6 +1,6 @@
 {
   "name": "@freeloop/tailwindcss-mask",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Tailwindcss mask image plugin.",
   "main": "src/index.js",
   "scripts": {
