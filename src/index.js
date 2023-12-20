@@ -1,6 +1,6 @@
 const plugin = require('tailwindcss/plugin')
 
-module.exports = plugin((addUtilities, matchUtilities) => {
+module.exports = plugin(({ addUtilities, matchUtilities }) => {
   const directions = {
     t: 'top',
     tr: 'top right',
@@ -18,7 +18,7 @@ module.exports = plugin((addUtilities, matchUtilities) => {
       return [
         `.mask-gradient-${shorthand}`,
         {
-          maskImage: `linear-gradient(to ${direction}, rgba(0, 0, 0, 1.0) 0, transparent 100%)`,
+          maskImage: `linear-gradient(to ${direction}, rgba(0, 0, 0, 1.0) 0, transparent 100%);`,
         },
       ]
     })
@@ -31,7 +31,7 @@ module.exports = plugin((addUtilities, matchUtilities) => {
       return [
         `.mask-radial-gradient.mask-gradient-${shorthand}`, // class name
         {
-          maskImage: `radial-gradient(circle at ${direction}, rgba(0, 0, 0, 1.0) 0, transparent 100%)`,
+          maskImage: `radial-gradient(circle at ${direction}, rgba(0, 0, 0, 1.0) 0, transparent 100%);`,
         },
       ]
     })

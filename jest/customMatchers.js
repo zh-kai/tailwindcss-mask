@@ -54,15 +54,15 @@ expect.extend({
 
     return { actual: received, message, pass }
   },
-  toIncludeCss(received, argument) {
+  async toIncludeCss(received, argument) {
     const options = {
       comment: 'stripped(received).includes(stripped(argument))',
       isNot: this.isNot,
       promise: this.promise,
     }
 
-    const actual = format(received)
-    const expected = format(argument)
+    const actual = await format(received)
+    const expected = await format(argument)
 
     const pass = actual.includes(expected)
 

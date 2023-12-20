@@ -5,7 +5,7 @@
   "main": "src/index.js",
   "scripts": {
     "release": "np",
-    "test": "c8 jest"
+    "test": "NODE_OPTIONS=--experimental-vm-modules c8 jest"
   },
   "license": "MIT",
   "repository": "https://github.com/zh-kai/tailwindcss-mask",
