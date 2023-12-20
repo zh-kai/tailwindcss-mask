@@ -8,7 +8,7 @@
     "test": "c8 jest"
   },
   "license": "MIT",
-  "repository": "https://github.com/maizzle/tailwindcss-plugin-starter",
+  "repository": "https://github.com/zh-kai/tailwindcss-mask",
   "publishConfig": {
     "access": "public"
   },
@@ -41,6 +41,8 @@
     ]
   },
   "keywords": [
-    "tailwindcss"
+    "tailwindcss",
+    "css",
+    "mask-image"
   ]
 }
